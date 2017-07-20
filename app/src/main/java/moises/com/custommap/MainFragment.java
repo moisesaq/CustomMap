@@ -17,7 +17,7 @@ import moises.com.custommap.map.OnCustomMapListener;
 
 public class MainFragment extends Fragment implements OnCustomMapListener{
 
-    private static final LatLng buenosAires = new LatLng(-34.5971895, -58.3688327);
+    private static final LatLng buenosAires = new LatLng(-34.6037389, -58.3837591);
     public MainFragment() {
     }
 
@@ -44,6 +44,7 @@ public class MainFragment extends Fragment implements OnCustomMapListener{
 
     private void setUp() {
         customMap = (CustomMap)getChildFragmentManager().findFragmentById(R.id.map);
+        customMap.setListener(this);
     }
 
     @Override

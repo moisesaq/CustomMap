@@ -19,6 +19,8 @@ public interface CustomMapManager {
     Marker addMarker(@NonNull LatLng latLng, @NonNull String title,
                      @NonNull String snippet, int markerIcon);
 
+    void addIconLabel(@NonNull CharSequence text, @NonNull LatLng latLng);
+
     void animateCamera(@NonNull LatLng latLng);
 
     void animateCameraWithZoom(@NonNull LatLng latLng, int zoom);
