@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import moises.com.custommap.demo.PolylineDemoActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
         unbinder = ButterKnife.bind(this);
         setSupportActionBar(toolbar);
         fab.setOnClickListener(view ->
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show());
+                PolylineDemoActivity.start(this));
     }
 
     private void showMainFragment(){
