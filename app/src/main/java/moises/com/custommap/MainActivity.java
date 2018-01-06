@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private void showMainFragment(){
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.content_main, LottieFragment.newInstance())//MainFragment.newInstance())
+                .replace(R.id.content_main, MainFragment.newInstance())
                 .commit();
     }
 
